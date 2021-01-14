@@ -1,0 +1,27 @@
+.footerBlock {
+    background-color: #e3beff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 1px solid;
+    margin:0 auto;
+    align-items: center;
+
+}
+.icons {
+    height: 60px;
+    background-color: #f6dd5c;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    height: 60px;
+    width: 60px;
+    background-color: #a1fc7a;
+}
