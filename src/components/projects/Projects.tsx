@@ -9,8 +9,8 @@ export const Projects = () => {
                 <h2 className={styles.title}>Projects</h2>
                 <div className={styles.projects}>
                     <Project discription={'ssssss ss ssssssss sssss sssssssss'} title={'Social-network'}/>
-                    <Project discription={'aa aaa aa afadsgssdg as aASDASD ASDF ASDF SADF asdg asdf ssdf asdf adwf asdf '} title={'ne Social-network'}/>
-                    <Project discription={'aa aaa aa afadsgssdg as aASDASD ASDF ASDF SADF asdg asdf ssdf asdf adwf asdf '} title={'ne Social-network'}/>
+                    <Project discription={'aa aaa aa afadsgDF SAD asdf adwf asdf '} title={'ne Social-network'}/>
+                    <Project discription={'aa aaa aa afadsgssdg as aASDASD ASDF  '} title={'ne Social-network'}/>
                 </div>
             </div>
         </div>

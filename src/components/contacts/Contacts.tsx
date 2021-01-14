@@ -5,7 +5,7 @@ export const Contacts = () => {
     return (
         <div className={s.contactsBlock}>
             <div className={s.container}>
-                <h3>Contacts</h3>
+                <h3 className={s.title}>Contacts</h3>
                 <div className={s.formContainer}>
                     <form className={s.form}>
                         <input/>

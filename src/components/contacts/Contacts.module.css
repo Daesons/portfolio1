@@ -30,3 +30,7 @@
     box-sizing: border-box;
     height: 140px;
 }
+
+.title {
+    background-color: #ffefb1;
+}

@@ -5,7 +5,7 @@ export const Footer =()=>{
     return(
         <div className={s.footerBlock}>
             <div className={s.container}>
-                <h3>Pew Pew</h3>
+                <h3 className={s.title}>Pew Pew</h3>
                 <div className={s.icons}>
                     <div className={s.item}></div>
                     <div className={s.item}></div>
