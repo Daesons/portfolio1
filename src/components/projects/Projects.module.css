@@ -1,5 +1,5 @@
 .projectsBlock {
-    background-color: #c2fda9;
+    background-color: #252525;
 }
 
 .container {
@@ -13,14 +13,16 @@
     align-items: center;
 }
 
-.title {
-    background-color: #ffefb1;
-}
-
 .projects {
     width: 100%;
     display: flex;
     border: 1px solid;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+@media screen and (max-width: 700px) {
+    .projects{
+        justify-content: center;
+    }
+
 }

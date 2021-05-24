@@ -1,11 +1,14 @@
 import React from "react";
 import s from './DistanceWork.module.css'
+import {Title} from "../Common/Title/Title";
+import {Separator} from "../Common/Separator/Separator";
 
 export const DistanceWork = () => {
     return (
         <div className={s.distanceWorkBlock}>
+            <Separator/>
             <div className={s.container}>
-                <h2 className={s.title}>Distance work</h2>
+                <Title title={'Distance work'}/>
                 <button>yfyznm vtyz</button>
             </div>
         </div>

@@ -1,11 +1,14 @@
 import React from "react";
 import s from './Contacts.module.css'
+import {Title} from "../Common/Title/Title";
+import {Separator} from "../Common/Separator/Separator";
 
 export const Contacts = () => {
     return (
         <div className={s.contactsBlock}>
+            <Separator/>
             <div className={s.container}>
-                <h3 className={s.title}>Contacts</h3>
+                <Title title={'Contacts'}/>
                 <div className={s.formContainer}>
                     <form className={s.form}>
                         <input/>

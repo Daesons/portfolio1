@@ -13,6 +13,12 @@
   align-items: center;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 751px) {
+  .container {
+    justify-content: center;
+  }
+
+}
 
 .inform {
   width: 300px;

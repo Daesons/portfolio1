@@ -1,6 +1,8 @@
 .projectBlock {
     width: 280px;
+
 }
+
 
 
 .picture {
@@ -17,5 +19,5 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    padding: 20px;
+
 }

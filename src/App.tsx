@@ -9,7 +9,7 @@ import {Contacts} from "./components/contacts/Contacts";
 import {Footer} from "./components/footer/Footer";
 
 function App() {
-  return <div>
+  return <div className={styles.app}>
     <Header/>
     <Main/>
     <Skills/>

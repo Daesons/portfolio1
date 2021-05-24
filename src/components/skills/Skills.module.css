@@ -1,5 +1,5 @@
 .skillsBlock {
-    background-color: #fda9a9;
+    background-color: #252525;
 }
 
 .container {
@@ -14,14 +14,15 @@
 
 }
 
-.title{
-    background-color: antiquewhite;
-}
-
 .skills {
     border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+@media screen and (max-width: 626px){
+    .skills {
+        justify-content: center;
+    }
 }
