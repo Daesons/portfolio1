@@ -1,0 +1,28 @@
+.skillsBlock {
+  background-color: #111111;
+
+  .container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .skills {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 626px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
+
+
+

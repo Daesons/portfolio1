@@ -7,14 +7,16 @@ import {Projects} from "./components/projects/Projects";
 import {DistanceWork} from "./components/distanceWork/DistanceWork";
 import {Contacts} from "./components/contacts/Contacts";
 import {Footer} from "./components/footer/Footer";
-
+export const lorem = 'Lorem ipsum dolor sit amet,' +
+    ' consectetur adipisicing elit. Beatae dicta eius et eum exercitationem, harum ipsum nam nemo nostrum' +
+    'possimus praesentium provident, quae repudiandae sed sequi tempora tempore tenetur! Quasi!'
 function App() {
   return <div className={styles.app}>
     <Header/>
     <Main/>
     <Skills/>
     <Projects/>
-    <DistanceWork/>
+    {/*<DistanceWork/>*/}
     <Contacts/>
     <Footer/>
   </div>

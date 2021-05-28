@@ -1,9 +1,9 @@
 import React from "react";
-import styles from './Project.module.css'
+import styles from './Project.module.scss'
 
 type ProjectPropsType = {
     title: string
-    discription: string
+    description: string
 }
 
 export const Project = (props: ProjectPropsType) => {
@@ -13,10 +13,11 @@ export const Project = (props: ProjectPropsType) => {
                 <div className={styles.picture}>
                     <button>See more</button>
                 </div>
-                <div className={styles.title}>
-                    <h3>{props.title}</h3>
+                <div className={styles.projectDescription}>
+                    <h3 className={styles.title}>{props.title}</h3>
+                    <p className={styles.description}>{props.description}</p>
                 </div>
-                <b>{props.discription}</b>
+
             </div>
         </div>
     )

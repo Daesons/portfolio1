@@ -1,5 +1,5 @@
 import React from "react";
-import s from './DistanceWork.module.css'
+import s from './DistanceWork.module.scss'
 import {Title} from "../Common/Title/Title";
 import {Separator} from "../Common/Separator/Separator";
 

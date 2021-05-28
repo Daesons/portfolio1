@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Main.module.css'
+import styles from './Main.module.scss'
 
 export function Main() {
     return (
@@ -10,7 +10,7 @@ export function Main() {
                     <h1>I am Vladik</h1>
                     <p>Front-end Developer</p>
                 </div>
-                <div className={styles.photo}></div>
+                <div className={styles.photo}/>
             </div>
         </div>
     )

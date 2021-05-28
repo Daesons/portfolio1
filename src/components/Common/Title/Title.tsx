@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Title.module.css'
+import styles from './Title.module.scss'
 
 
 type TitleType = {
@@ -12,8 +12,8 @@ export const Title : React.FC<TitleType> = (
     }
 ) => {
     return <React.Fragment>
-        <div className={styles.title}>
-            <h3>{title}</h3>
+        <div className={styles.container}>
+            <h3 className={styles.title}>{title}</h3>
         </div>
     </React.Fragment>
 }
