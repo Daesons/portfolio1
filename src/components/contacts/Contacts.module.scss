@@ -1,5 +1,6 @@
 .contactsBlock {
-  background-color: #252525;
+  background-color: #111111;
+
 
   .container {
     border: 1px solid;
@@ -10,24 +11,93 @@
     justify-content: center;
     align-items: center;
 
-    .formContainer {
-      height: 200px;
-      width: 60%;
-      margin: 0 auto;
-      border: 1px solid;
+    .wrapper {
+      display: grid;
+      grid-template-columns: 25% 75%;
+      width: 100%;
 
-      .form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        height: 200px;
+      .formContainer {
 
-        .textarea {
-          box-sizing: border-box;
-          height: 140px;
+        .form {
+          display: flex;
+          flex-direction: column;
+
+
+          .inputContainer {
+            display: flex;
+            justify-content: space-between;
+
+
+            .input {
+              padding: 0 20px;
+            }
+
+            .input input {
+              border: 1px solid #111;
+              width: 100%;
+              background: #252525;
+              color: #fff;
+              padding: 11px 26px;
+              margin-bottom: 30px;
+              border-radius: 30px;
+              outline: none !important;
+              transition: .3s;
+              box-sizing: border-box;
+              overflow: visible;
+              font-family: 'Poppins', sans-serif;
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 1.6;
+
+              &:focus {
+                border: 1px solid orange;
+              }
+            }
+          }
+
+          .textarea {
+            display: flex;
+            justify-content: stretch;
+            padding: 0 20px;
+
+          }
+
+          .textarea textarea {
+            overflow: hidden;
+            border-radius: 30px;
+            outline: none !important;
+            transition: .3s;
+            border: 1px solid #111;
+            background: #252525;
+            color: #fff;
+            width: 100%;
+            padding: 12px 26px;
+            margin: 0;
+            resize: vertical;
+            box-sizing: border-box;
+            min-height: 200px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.6;
+
+            &:focus {
+              border: 1px solid orange;
+            }
+          }
         }
+
+      }
+
+      .description {
+        padding: 0 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: white;
+        text-align: center;
       }
     }
   }
 }
+
