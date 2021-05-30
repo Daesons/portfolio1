@@ -52,6 +52,11 @@
               &:focus {
                 border: 1px solid orange;
               }
+
+              &:hover {
+                border: 1px solid orange;
+              }
+
             }
           }
 
@@ -82,6 +87,9 @@
             line-height: 1.6;
 
             &:focus {
+              border: 1px solid orange;
+            }
+            &:hover {
               border: 1px solid orange;
             }
           }

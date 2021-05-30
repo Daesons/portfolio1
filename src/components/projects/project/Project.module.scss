@@ -9,12 +9,44 @@
     margin: 0 0 30px;
 
     .picture {
+      position: relative;
       width: 350px;
-      height: 200px;
+      height: 250px;
       background-color: #f6dd5c;
       display: flex;
       justify-content: center;
       align-items: center;
+      background-size: cover;
+      background-position: center;
+      &:before {
+        background-color: #111111;
+        opacity: 0.4;
+        position: absolute;
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        content: '';
+        transition: 0.3s;
+      }
+      &:hover:before {
+        opacity: 0;
+      }
+      .button {
+        position: relative;
+        z-index: 12;
+        padding: 5px 10px;
+        border-radius: 8px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: white;
+        background-color:#252525;
+        transition: 0.3s;
+        &:hover {
+          color: orange;
+        }
+      }
     }
 
     .projectDescription {
@@ -22,6 +54,8 @@
       background-color: #252525;
       padding: 20px 25px 25px 25px;
       border-radius: 0 0 5px 5px;
+      color: white;
+      transition: 0.3s;
 
       .title {
         font-family: 'Poppins', sans-serif;
@@ -30,14 +64,14 @@
         margin: 0 0 8px;
         display: flex;
         justify-content: center;
-        color: white;
+        color: inherit;
       }
       .description {
         margin: 15px 0 5px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 500;
         font-size: 15px;
-        color: white;
+        color: inherit;
 
       }
     }
