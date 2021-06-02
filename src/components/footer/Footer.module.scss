@@ -1,5 +1,8 @@
+@import '../Common/Styles/Variables';
+@import '../Common/Styles/Mixins';
+
 .footerBlock {
-  background-color: #252525;
+  background-color: $itemsBgColor;
 
   .container {
     display: flex;

@@ -1,5 +1,8 @@
+@import '../Common/Styles/Mixins';
+@import '../Common/Styles/Variables';
+
 .projectsBlock {
-  background-color: #111111;
+  background-color: $bgColor;
 
   .container {
     width: 80%;
@@ -15,7 +18,8 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      @media screen and (max-width: 1125px) {
+      column-gap: 30px;
+      @media screen and (max-width: 913px) {
         justify-content: center;
       }
     }

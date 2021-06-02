@@ -1,6 +1,8 @@
+@import "../Common/Styles/Variables";
+
 .header {
   height: 80px;
-  background-color: #111111;
+  background-color: $bgColor;
 
   .container {
     width: 80%;

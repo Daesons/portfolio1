@@ -1,17 +1,17 @@
+@import "../../Common/Styles/Variables";
+@import "../../Common/Styles/Mixins";
+
+
 .container {
     width: 100%;
     .title {
         display: block;
-        font-family: 'Poppins', sans-serif;
-        font-size: 24px;
-        font-weight: 600;
         text-transform: uppercase!important;
-        line-height: 1.2;
         margin: 0;
         padding-bottom: 3rem!important;
-        color: white;
         box-sizing: border-box;
         text-align: center;
+        @include textParameters($titleFontFamily, 24px, 600, $textColor, 1.2)
     }
 
 }

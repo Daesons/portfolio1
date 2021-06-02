@@ -1,9 +1,11 @@
+@import '../Common/Styles/Mixins';
+@import '../Common/Styles/Variables';
+
 .contactsBlock {
-  background-color: #111111;
+  background-color: $bgColor;
 
 
   .container {
-    border: 1px solid;
     margin: 0 auto;
     width: 80%;
     display: flex;
@@ -11,101 +13,124 @@
     justify-content: center;
     align-items: center;
 
-    .wrapper {
-      display: grid;
-      grid-template-columns: 25% 75%;
+    .formContainer {
       width: 100%;
+      display: flex;
+      justify-content: center;
 
-      .formContainer {
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        @media screen and (max-width: 700px) {
+          width: 100%;
+        }
 
-        .form {
+
+        .inputContainer {
           display: flex;
-          flex-direction: column;
-
-
-          .inputContainer {
-            display: flex;
-            justify-content: space-between;
-
-
-            .input {
-              padding: 0 20px;
-            }
-
-            .input input {
-              border: 1px solid #111;
-              width: 100%;
-              background: #252525;
-              color: #fff;
-              padding: 11px 26px;
-              margin-bottom: 30px;
-              border-radius: 30px;
-              outline: none !important;
-              transition: .3s;
-              box-sizing: border-box;
-              overflow: visible;
-              font-family: 'Poppins', sans-serif;
-              font-size: 15px;
-              font-weight: 500;
-              line-height: 1.6;
-
-              &:focus {
-                border: 1px solid orange;
-              }
-
-              &:hover {
-                border: 1px solid orange;
-              }
-
-            }
-          }
-
-          .textarea {
-            display: flex;
+          justify-content: space-between;
+          @media screen and (max-width: 1201px) {
+            flex-direction: column;
             justify-content: stretch;
-            padding: 0 20px;
-
           }
 
-          .textarea textarea {
-            overflow: hidden;
+          .input {
+            padding: 0 20px;
+          }
+
+          .input input {
+            border: 1px solid $bgColor;
+            width: 100%;
+            background: $itemsBgColor;
+            padding: 11px 26px;
+            margin-bottom: 30px;
             border-radius: 30px;
             outline: none !important;
             transition: .3s;
-            border: 1px solid #111;
-            background: #252525;
-            color: #fff;
-            width: 100%;
-            padding: 12px 26px;
-            margin: 0;
-            resize: vertical;
             box-sizing: border-box;
-            min-height: 200px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 15px;
-            font-weight: 500;
-            line-height: 1.6;
+            overflow: visible;
+            @include textParameters($titleFontFamily, 15px, 500, $textColor, 1.6);
 
             &:focus {
-              border: 1px solid orange;
+              border: 1px solid $activeTextColor;
             }
+
             &:hover {
-              border: 1px solid orange;
+              border: 1px solid $activeTextColor;
             }
+
           }
         }
 
-      }
+        .textarea {
+          display: flex;
+          justify-content: stretch;
+          padding: 0 20px;
 
-      .description {
-        padding: 0 20px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-        color: white;
-        text-align: center;
+        }
+
+        .textarea textarea {
+          overflow: hidden;
+          border-radius: 30px;
+          outline: none !important;
+          transition: .3s;
+          border: 1px solid #111;
+          background: #252525;
+          width: 100%;
+          padding: 12px 26px;
+          resize: vertical;
+          box-sizing: border-box;
+          min-height: 200px;
+          margin-bottom: 30px;
+          @include textParameters($titleFontFamily, 15px, 500, $textColor, 1.6);
+
+          &:hover {
+            border: 1px solid $activeTextColor;
+          }
+
+          &:focus {
+            border: 1px solid $activeTextColor;
+          }
+        }
+
+        .buttonContainer {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .button {
+            padding: 0;
+            margin: 0;
+            width: 150px;
+            height: 50px;
+            @include textParameters($titleFontFamily, 15px, 500, $textColor, 1.6);
+            text-transform: uppercase;
+            background-color: $itemsBgColor;
+            border: 2px solid $activeTextColor;
+            border-radius: 25px;
+            transition: .5s;
+
+            &:hover {
+              background-color: $activeTextColor;
+            }
+
+            &:focus {
+              border-radius: 0;
+              background-color: $itemsBgColor;
+            }
+          }
+        }
       }
     }
+
+    .description {
+      padding: 0 20px;
+      text-align: center;
+      @include textParameters($commonFontFamily, 15px, 500, $textColor)
+    }
+
   }
 }
 

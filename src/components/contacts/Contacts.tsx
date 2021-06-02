@@ -10,14 +10,6 @@ export const Contacts = () => {
 
             <div className={s.container}>
                 <Title title={'Contacts'}/>
-                <div className={s.wrapper}>
-                    <div className={s.description}>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
-                        Aliquam architecto dolorem ducimus
-                        earum laboriosam laborum nemo optio ratione sequi voluptas? A,
-                        cupiditate dignissimos dolor enim maxime reprehenderit sint tempora voluptate.
-                    </div>
                     <div className={s.formContainer}>
                         <form className={s.form}>
                             <div className={s.inputContainer}>
@@ -34,14 +26,13 @@ export const Contacts = () => {
                             <div  className={s.textarea}>
                                 <textarea placeholder={'YOUR MESSAGE'}/>
                             </div>
-                            <div>
-                                <button type={'submit'}> kek</button>
+                            <div className={s.buttonContainer}>
+                                <button className={s.button} type={'submit'}>Send message</button>
                             </div>
 
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
     )
 }

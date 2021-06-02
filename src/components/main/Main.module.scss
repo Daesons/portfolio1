@@ -1,9 +1,11 @@
+@import '../Common/Styles/Variables';
+@import '../Common/Styles/Mixins';
+
 .mainBlock {
   height: 80vh;
-  background-color: #646f6f;
+  background-color: $bgColor;
 
   .container {
-    border: 1px solid;
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -11,19 +13,60 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    @media screen and (max-width: 751px) {
+    column-gap: 30px;
+    @media screen and (max-width: 1188px) {
       justify-content: center;
     }
 
     .inform {
-      width: 300px;
-      background-color: #a1fc7a;
+      div {
+        display: inline-block;
+        width: 100%;
+        @include textParameters($titleFontFamily, 30px, 600, $textColor, 1.2);
+        @media screen and (max-width: 1188px) {
+        }
+        @media screen and (max-width: 650px) {
+          @include textParameters($titleFontFamily, 20px, 600, $textColor, 1.2);
+        }
+      }
+      span {
+        width: 100%;
+        text-decoration: line-through;
+        text-align: start;
+        @include textParameters($titleFontFamily, 30px, 600, $textColor, 1.2);
+        @media screen and (max-width: 1188px) {
+        }
+        @media screen and (max-width: 650px) {
+          @include textParameters($titleFontFamily, 20px, 600, $textColor, 1.2);
+        }
+      }
+      h1 {
+        margin: 0;
+        @include textParameters($titleFontFamily, 41px, 600, $activeTextColor, 1.2);
+        text-align: center;
+        @media screen and (max-width: 650px) {
+          @include textParameters($titleFontFamily, 31px, 600, $activeTextColor, 1.2);
+        }
+      }
+
+      p {
+        margin: 0;
+        @include textParameters($titleFontFamily, 30px, 600, $textColor, 1.2);
+        text-align: center;
+        @media screen and (max-width: 650px) {
+          @include textParameters($titleFontFamily, 20px, 600, $textColor, 1.2);
+        }
+
+      }
     }
 
     .photo {
-      background-color: #f4c9ff;
-      width: 300px;
+      width: 400px;
       height: 400px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+
     }
   }
 }

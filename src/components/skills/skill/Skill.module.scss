@@ -1,6 +1,10 @@
+@import "../../Common/Styles/Variables";
+@import "../../Common/Styles/Mixins";
+
+
 .skillBlock {
   width: 330px;
-  background-color: #252525;
+  background-color: $itemsBgColor;
   box-sizing: border-box;
   border-radius: 20px;
   margin: 0 0 30px;
@@ -14,26 +18,21 @@
 
     .skillDescription {
       box-sizing: border-box;
-      background-color: #252525;
+      background-color: $itemsBgColor;
       padding: 20px 25px 25px 25px;
       border-radius: 20px;
 
       .title {
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
         margin: 0 0 8px;
         display: flex;
         justify-content: center;
-        color: white;
+        @include textParameters($titleFontFamily, 20px, 600, $textColor)
       }
+
       .description {
         margin: 15px 0 5px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-        color: white;
         text-align: center;
+        @include textParameters($commonFontFamily, 15px, 500, $textColor)
 
       }
     }

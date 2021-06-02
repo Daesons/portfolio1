@@ -1,0 +1,7 @@
+@import '/components/Common/Styles/Variables';
+@import '/components/Common/Styles/Mixins';
+
+.app {
+    background-color: $bgColor;
+    color: $textColor;
+}

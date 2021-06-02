@@ -1,3 +1,6 @@
+@import '../../Common/Styles/Variables';
+@import '../../Common/Styles/Mixins';
+
 .projectBlock {
   width: 350px;
 
@@ -7,19 +10,26 @@
     align-items: center;
     box-sizing: border-box;
     margin: 0 0 30px;
-
+    transition: 0.3s;
+    &:hover {
+      color: $activeTextColor;
+      .picture::before {
+        opacity: 0;
+      }
+    }
     .picture {
       position: relative;
       width: 350px;
       height: 250px;
-      background-color: #f6dd5c;
       display: flex;
       justify-content: center;
       align-items: center;
       background-size: cover;
       background-position: center;
-      &:before {
-        background-color: #111111;
+      transition: inherit;
+
+      &::before {
+        background-color: $bgColor;
         opacity: 0.4;
         position: absolute;
         top:0;
@@ -27,26 +37,12 @@
         left: 0;
         bottom: 0;
         content: '';
-        transition: 0.3s;
+        transition: inherit;
+
       }
-      &:hover:before {
-        opacity: 0;
-      }
-      .button {
-        position: relative;
-        z-index: 12;
-        padding: 5px 10px;
-        border-radius: 8px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-        color: white;
-        background-color:#252525;
-        transition: 0.3s;
-        &:hover {
-          color: orange;
-        }
-      }
+    }
+    .picture a {
+      @include href()
     }
 
     .projectDescription {
@@ -54,25 +50,21 @@
       background-color: #252525;
       padding: 20px 25px 25px 25px;
       border-radius: 0 0 5px 5px;
-      color: white;
-      transition: 0.3s;
-
+      color: inherit;
+      border-top: 5px solid $activeTextColor;
       .title {
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        margin: 0 0 8px;
-        display: flex;
-        justify-content: center;
-        color: inherit;
+        margin: 0;
+        a {
+          margin: 0 0 8px;
+          display: flex;
+          justify-content: center;
+          @include textParameters($titleFontFamily, 20px,600, inherit);
+          text-decoration: none;
+        }
       }
       .description {
         margin: 15px 0 5px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-        color: inherit;
-
+        @include textParameters($commonFontFamily, 15px,500, $textColor)
       }
     }
   }
