@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio1/static/css/main.ddc264af.chunk.css",
-    "main.js": "/portfolio1/static/js/main.05858fc4.chunk.js",
-    "main.js.map": "/portfolio1/static/js/main.05858fc4.chunk.js.map",
-    "runtime-main.js": "/portfolio1/static/js/runtime-main.97e4766e.js",
-    "runtime-main.js.map": "/portfolio1/static/js/runtime-main.97e4766e.js.map",
-    "static/js/2.c5c691de.chunk.js": "/portfolio1/static/js/2.c5c691de.chunk.js",
-    "static/js/2.c5c691de.chunk.js.map": "/portfolio1/static/js/2.c5c691de.chunk.js.map",
-    "static/js/3.51ddf781.chunk.js": "/portfolio1/static/js/3.51ddf781.chunk.js",
-    "static/js/3.51ddf781.chunk.js.map": "/portfolio1/static/js/3.51ddf781.chunk.js.map",
+    "main.css": "/portfolio1/static/css/main.bfe127a9.chunk.css",
+    "main.js": "/portfolio1/static/js/main.3c008f0b.chunk.js",
+    "main.js.map": "/portfolio1/static/js/main.3c008f0b.chunk.js.map",
+    "runtime-main.js": "/portfolio1/static/js/runtime-main.2803a96e.js",
+    "runtime-main.js.map": "/portfolio1/static/js/runtime-main.2803a96e.js.map",
+    "static/js/2.e6bd4e2a.chunk.js": "/portfolio1/static/js/2.e6bd4e2a.chunk.js",
+    "static/js/2.e6bd4e2a.chunk.js.map": "/portfolio1/static/js/2.e6bd4e2a.chunk.js.map",
+    "static/js/3.27b56a68.chunk.js": "/portfolio1/static/js/3.27b56a68.chunk.js",
+    "static/js/3.27b56a68.chunk.js.map": "/portfolio1/static/js/3.27b56a68.chunk.js.map",
     "index.html": "/portfolio1/index.html",
-    "static/css/main.ddc264af.chunk.css.map": "/portfolio1/static/css/main.ddc264af.chunk.css.map",
-    "static/js/2.c5c691de.chunk.js.LICENSE.txt": "/portfolio1/static/js/2.c5c691de.chunk.js.LICENSE.txt",
+    "static/css/main.bfe127a9.chunk.css.map": "/portfolio1/static/css/main.bfe127a9.chunk.css.map",
+    "static/js/2.e6bd4e2a.chunk.js.LICENSE.txt": "/portfolio1/static/js/2.e6bd4e2a.chunk.js.LICENSE.txt",
     "static/media/123123.de487889.jpg": "/portfolio1/static/media/123123.de487889.jpg",
     "static/media/CardsProject.c6ae0b06.jpg": "/portfolio1/static/media/CardsProject.c6ae0b06.jpg",
     "static/media/ToDo.845a4939.jpg": "/portfolio1/static/media/ToDo.845a4939.jpg",
     "static/media/socialNetwork.43c087eb.jpg": "/portfolio1/static/media/socialNetwork.43c087eb.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.97e4766e.js",
-    "static/js/2.c5c691de.chunk.js",
-    "static/css/main.ddc264af.chunk.css",
-    "static/js/main.05858fc4.chunk.js"
+    "static/js/runtime-main.2803a96e.js",
+    "static/js/2.e6bd4e2a.chunk.js",
+    "static/css/main.bfe127a9.chunk.css",
+    "static/js/main.3c008f0b.chunk.js"
   ]
 }
