@@ -2,28 +2,34 @@
 @import '../Common/Styles/Mixins';
 
 .footerBlock {
-  background-color: $itemsBgColor;
+  background-color: $bgColor;
 
   .container {
     display: flex;
     flex-direction: column;
     width: 80%;
-    border: 1px solid;
     margin: 0 auto;
     align-items: center;
 
+
     .icons {
-      height: 60px;
-      background-color: #f6dd5c;
+      height: 80px;
       width: 70%;
       margin: 0 auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
 
       .item {
-        height: 60px;
-        width: 60px;
-        background-color: #a1fc7a;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
 
