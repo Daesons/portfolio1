@@ -3,6 +3,8 @@
 
 .projectsBlock {
   background-color: $bgColor;
+  scroll-behavior: smooth;
+
 
   .container {
     width: 80%;

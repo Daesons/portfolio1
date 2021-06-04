@@ -2,12 +2,21 @@
 @import '../Common/Styles/Mixins';
 
 .mainBlock {
-  height: 80vh;
+  min-height: 80vh;
   background-color: $bgColor;
+  position: relative;
+  .particles {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+  }
 
   .container {
     width: 80%;
-    height: 100%;
+    min-height: 80vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -62,11 +71,12 @@
 
     .photo {
       width: 400px;
-      height: 400px;
+      height: 420px;
       background-size: cover;
       background-position: center;
       position: relative;
       margin-bottom: 30px;
+      margin-top: 30px;
 
     }
   }

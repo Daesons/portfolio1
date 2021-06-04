@@ -5,6 +5,8 @@ import {Separator} from "../Common/Separator/Separator";
 import {Title} from "../Common/Title/Title";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCss3, faJs, faReact} from "@fortawesome/free-brands-svg-icons";
+import {Fade, Slide} from "react-awesome-reveal";
+
 const reactDescription = '' +
     'Using next libraries : React-router-dom, Redux, Axios, Redux-Form, Redux-Thunk, Formik, TypeScript. ' +
     'Work with Hooks, Hoc, connect. Experience: refactoring, bug fixing, migrating to TypeScript, registration,login ' +
@@ -15,19 +17,28 @@ const JsDescription = '' +
     'I really love JS. My free time I prefer to spend with Codewars. Have knowledge about event loop, promises, classes and typescript.'
 
 
-export const Skills = ()=>{
-    return(
-        <div className={styles.skillsBlock}>
+export const Skills = () => {
+    return (
+        <div className={styles.skillsBlock} id={'Skills'} style={{scrollBehavior: 'smooth'}}>
             <Separator/>
-            <div className={styles.container}>
-               <Title title={'Skills'}/>
-                <div className={styles.skills}>
-                    <Skill title={"React"} description={reactDescription}><FontAwesomeIcon icon={faReact} color={'#ffb400'} size={"4x"}/></Skill>
-                    <Skill title={"CSS"} description={CSSDescription}><FontAwesomeIcon icon={faCss3} color={'#ffb400'} size={"4x"}/></Skill>
-                    <Skill title={"JavaScript"} description={JsDescription}><FontAwesomeIcon icon={faJs} color={'#ffb400'} size={"4x"}/></Skill>
-                </div>
-            </div>
+            <Slide direction={"left"}>
 
+                <div className={styles.container}>
+                    <Title title={'Skills'}/>
+                    <div className={styles.skills}>
+
+                        <Skill title={"React"} description={reactDescription}><FontAwesomeIcon icon={faReact}
+                                                                                               color={'#ffb400'}
+                                                                                               size={"4x"}/></Skill>
+                        <Skill title={"CSS"} description={CSSDescription}><FontAwesomeIcon icon={faCss3}
+                                                                                           color={'#ffb400'}
+                                                                                           size={"4x"}/></Skill>
+                        <Skill title={"JavaScript"} description={JsDescription}><FontAwesomeIcon icon={faJs}
+                                                                                                 color={'#ffb400'}
+                                                                                                 size={"4x"}/></Skill>
+                    </div>
+                </div>
+            </Slide>
         </div>
     )
 }
